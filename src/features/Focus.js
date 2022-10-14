@@ -8,7 +8,7 @@ export const Focus = ({addSubject}) => {
   const [subject, setSubject] = useState(null);
   console.log(subject);
   return (
-    <View style={styles.container}>
+    <View>
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.textInput}
@@ -28,9 +28,6 @@ export const Focus = ({addSubject}) => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
   inputContainer: {
     padding: spacing.lg,
     justifyContent: 'flex-start',
